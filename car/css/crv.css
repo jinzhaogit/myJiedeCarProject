@@ -1,0 +1,160 @@
+/*导航栏*/
+.nav{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 43px;
+    background-color: #8CB503;
+}
+.nav>ul{
+    width: 872px;
+    height: 100%;
+    margin: 0 auto;
+}
+.nav>ul>li{
+    float: left;
+    width: 108px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+}
+.nav>ul>li>a{
+    color: #fff;
+}
+.navactive{
+    background-color: #076FC5;
+    border-radius:3px;
+}
+/*第一屏*/
+.page1{
+    position: relative;
+    width: 100%;
+    background-image: url("../img/crv/kv02.jpg");
+}
+.page1>img{
+    width: 100%;
+}
+.page1-bg,.page1-title{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/crv/20180627_bottom.png);
+}
+.page1>.page1-title{
+    background-image: url(../img/crv/20180627_title.png);
+}
+/*第二屏*/
+*{
+    box-sizing: border-box;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.marb7{
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+.scalecar{
+    overflow: hidden;
+}
+.scalecar>img{
+    transition: all .5s linear;
+}
+.scalecar>img:hover{
+    transform: scale(1.1);
+}
+.car-big{
+    overflow: hidden;
+    position: relative;
+}
+.redcar,.bluecar,.bluecar,.greencar,.orangecar,.blue2car,.graycar{
+    overflow: hidden;
+    width: 100%;
+}
+.car-show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/crv/t-color-red.png);
+    opacity: 0;
+}
+.car-show-bg2{
+    background-image: url(../img/crv/t-color-blue.png);
+}
+.car-show-bg3{
+    background-image: url(../img/crv/t-color-green.png);
+}
+.car-show-bg4{
+    background-image: url(../img/crv/t-color-orange.png);
+}
+.car-show-bg5{
+    background-image: url(../img/crv/t-color-blue2.png);
+ }
+.car-show-bg6{
+  background-image: url(../img/crv/t-color-gray.png);
+}
+/*第三屏*/
+.page3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/crv/p6-bg.png) no-repeat;
+}
+.page3-title{
+    position: absolute;
+    top: 92px;
+    right: 221px;
+}
+.p6-car12 {
+    position: absolute;
+    top: 287px;
+    left: 239px;
+    z-index: 3;
+    cursor: pointer;
+}
+.p6-car07 {
+    position: absolute;
+    top: 305px;
+    left: 641px;
+    z-index: 2;
+    width: 680px;
+    cursor: pointer;
+}
+.p6-car05 {
+    position: absolute;
+    top: 357px;
+    left: 1120px;
+    z-index: 1;
+    width: 500px;
+    cursor: pointer;
+}
+/*底部*/
+.cti-footer-wrap {
+    margin-top: -75px;
+    text-align: center;
+    background-color: #303030;
+    border-top: 1px solid #c7c7c7;
+}
+.cti-footer-link-ctn {
+    margin: auto;
+    padding: 0.8% 0%;
+    line-height: 30px;
+    color: #646464;
+}
+.cti-footer-link-ctn a {
+    color: #646464;
+    margin-right: 1%;
+}
+.cti-footer-link-ctn a:hover {
+    text-decoration: underline;
+}
+.cti-footer-link-ctn .d-line {
+    margin-right: 0.5%;
+}

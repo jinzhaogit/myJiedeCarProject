@@ -1,0 +1,169 @@
+/* 第一区 */
+#zoom{
+    position: relative;
+}
+#zoom>.plo{
+    position: relative;
+    padding-top: 50px;
+}
+#zoom>.plo>.plo-kv{
+    width: 100%;
+}
+#zoom>.plo>.ztitle{
+    position: absolute;
+    top: 15%;
+    left: 26%;
+}
+#zoom>.plo>.sport-logo{
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+#zoom>.plo>.fun-logo{
+    position: absolute;
+    bottom: 10%;
+    right: 9%;
+}
+/* 悬浮窗口 */
+#zoom>.slide{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 200px;
+}
+.slide>.price{
+    height: 100px;
+    padding: 24px 0 16px 17px;
+    color: #fff; 
+}
+.slide>.price span{
+    font-size: 14px;
+}
+.slide>.price h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.slide>img{
+    padding-left: 20px;
+}
+.slide>ul{
+    padding-top: 20px;
+}
+.slide>ul>li{
+    height: 40px;
+    padding-left: 20px;
+}
+.slide>ul>li>a{
+    color: #ddd;
+    font-size: 14px;
+}
+.tvc{
+    height: 72px;
+    width: 200px;
+    overflow: hidden;
+}
+.tvc>.tvc-bg{
+    background-image: url(../img/index/video_bg.jpg);
+    transition: all .5s linear;
+}
+.tvc>.tvc-bg>.video{
+    display: inline-block;
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.tvc>.tvc-bg>.video>img{
+    transition: all .5s linear;    
+}
+.tvc>.tvc-bg>img{
+    padding-bottom: 10px;
+}
+.tvc:hover .tvc-bg{
+    transform: scale(1.1);
+}
+.tvc:hover .video>img{
+    transform: scale(.8);
+}
+/* 滚动鼠标 */
+.cursor{
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 100;
+    text-align: center;
+}
+.cursor>img{
+    animation: cursor 2s linear infinite;
+}
+.cursor>p{
+    padding-top: 15px;
+    color: #fff;
+    font-size: 12px;
+}
+@-webkit-keyframes cursor{
+    0%{transform: translateY(15px);opacity:0;}
+    100%{transform: translateY(0);opacity: 1}
+}
+/* 动态导航栏 */
+#nav{
+    width: 100%;
+    height: 50px;
+    background-image: url(../img/index/nav2_bg.jpg);
+}
+.navfixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:999;
+}
+.nav-limit{
+    position: relative;
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+}
+.nav-limit>.nav-self{
+    float: left;
+    width: 132px;
+    height: 50px;
+    background: url(../img/index/self_logo.png) no-repeat center;
+}
+.nav-limit>.nav-info{
+    width: 73%;
+    margin-left: 14%;
+}
+.nav-limit>.nav-info>li{
+    float: left;
+    width: 104px;
+    height: 50px;
+    padding-right: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.nav-limit>.nav-info>li.nactive{
+    color: #99164a;
+    font-weight: bold;
+    font-size: 16px;
+}
+.nav-limit>.limove{
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+}
+/* 预约试驾 */
+.nav-limit .nav-r{
+    position: absolute;
+    top: 0;
+    right: -145px;
+    width: 145px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.nav-limit .nav-r>img{
+    padding: 0 20px 5px 0;
+}
